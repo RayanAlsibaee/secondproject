@@ -20,7 +20,7 @@
                         class="fa-solid fa-envelope"></i> :
                     hjksdfa@gmail.com</div>
                 <div class="col log">
-                    <p class="btn">LOG IN </p>
+                    <a class="btn" data-toggle="modal" data-target="#exampleModal">LOG IN </a>
                 </div>
             </div>
         </div>
@@ -38,12 +38,18 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mar">
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a class="nav-link" href="index.html">Main Page<span class="sr-only"></span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.html">contact us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="training.html">Courses</a>
+                      </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -126,7 +132,7 @@
                             <a href="blog_datails.html" class="btn btn-primary">read more</a>
                         </div>
                         <div class="blog-img">
-                            <img class="w-100" src="/images/car4.jpg" alt="">
+                            <img class="w-100" src="images/car4.jpg" alt="">
                         </div>
                     </div>
 
@@ -197,7 +203,7 @@
                     </div>
                     <div class="mt-5">
                         <h2>Weather Today</h2>
-                        <img class=" w-100" src="/images/weather.jpg" alt="">
+                        <img class=" w-100" src="images/weather.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -206,7 +212,39 @@
 
 
     <!-- Blog -->
-
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="height: 100px;">
+          <h5 class="modal-title mt-3" style="margin: 0px;color: blue;" id="exampleModalLabel">LOG IN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Log in </button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+   </div>
+    <!-- modal -
 
     <!-- start footer -->
     <footer>
@@ -228,7 +266,8 @@
                             <a href="index.html"> Home</a>
                         </li>
                         <li>
-                            <a href=""> Our Services</a>
+                            <a href="training.html"> Our course</a>
+
 
                         </li>
                         <li>
@@ -238,7 +277,7 @@
                             <a href="blog.html"> Our Blog</a>
                         </li>
                         <li>
-                            <a href=""> Contact us</a>
+                            <a href="contact_us.html"> Contact us</a>
                         </li>
                     </ul>
                 </div>

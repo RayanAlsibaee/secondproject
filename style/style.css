@@ -5,18 +5,20 @@
     font-family: 'Cairo', sans-serif;
     font-size: 20px;
     color: black;
+    margin: 0px;
+    
 }
 body{
-    height:3000px;
+  max-height:3000px;
 }
 header{
     background-color:rgb(92, 153, 223);
     height: 50px;
     line-height: 50px;
-    z-index: 1000;
+    z-index: 10000;
     position: sticky;
     top: 0;
-    text-wrap: none;
+    overflow: auto;
 
 }
 
@@ -154,8 +156,7 @@ margin: auto;
     height: inherit;
     padding-top: 10%;
     white-space: nowrap;
-    overflow: scroll;
-    text-overflow: ellipsis;
+    overflow-y: auto;
 
 }
 .statistic .container{
@@ -206,8 +207,10 @@ footer{
     border-top: 1px blue solid;
     background-color:rgb(92, 153, 223);
     padding: 30px;
-    height: 300px;
-    
+    height: 340px;
+    margin: 0;
+    overflow-wrap: none;
+    overflow: auto;
 }
 footer h3 {
     color: white;
@@ -283,4 +286,47 @@ footer hr{
  }
  .blog-ditails h2{
     color: blue;
+}
+.contact .card{
+    margin-bottom: 20px;
+}
+.contact .card:hover{
+    transform: none;
+}
+.contact{
+    background-color:rgba(90, 138, 209, 0.082) ;
+    padding: 30px;
+    border-top: blue 1px solid;
+}
+.card-deck a {
+    cursor: pointer;
+}
+.modal-content .modal-header button{
+    border: 1px rgb(167, 163, 163);
+    height: 40px;
+    width: 30px;
+   background-color: white;
+}
+.card-deck i {
+    font-size: 20px;
+    color: blue;
+    height: 30px;
+    width: 30px;
+}
+.card-deck img:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.cor {
+    background-color:rgba(90, 138, 209, 0.082) ;
+    padding: 30px;
+    border-top: 1px blue solid;
+}
+.cours-details .card:hover{
+    transform: scale(1);
+}
+.cours-details {
+    padding: 100px 0px;
+  background-color: rgba(90, 138, 209, 0.082);
+  border-top: 1px blue solid;
 }
